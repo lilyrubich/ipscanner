@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Scanner</title>
+</head>
+<body>
+<h2>IP Scanner for getting domains by IP range</h2><br>
+<form method="get" action="/ipscanner/domains">
+    <label for="ip">IP with mask value (8.8.8.8/32):  </label>
+    <input type="text" name="ip" id="ip">
+    <label for="thread_count">Number of threads:  </label>
+    <input type="text" name="thread_count" id="thread_count">
+    <button>Search</button>
+</form>
+<br>
+<h3>Found domain names:</h3>
+<textarea style="overflow:auto;resize:none" id="domains" name="domains" rows="20" cols="49" readonly>
+</textarea>
+</body>
+</html>
